@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>定时器按钮测试</title>
+  <link rel="stylesheet" href="timer-button.css">
+  <link rel="icon" href="https://i.wangding.in/favicon.ico" sizes="48x48" type="image/png">
+  <style>
+  .main{
+    width:200px;
+    height:200px;
+    margin:0 auto;
+  }
+  </style>
+</head>
+<body>
+<details open>
+  <summary>添加按钮</summary>
+  <form class="form-create-button">
+    <label>初始状态：</label>
+    <input type="radio" name="status" value="true"><label>启用</label>
+    <input type="radio" name="status" value="false" checked><label>禁用</label>
+    <br>
+    <label>禁用时长：</label>
+    <input type="number" min="0" max="100" value="6" autofocus>秒
+    <br>
+    <label>按钮文字：</label>
+    <inout type="text" maxlength="5" value="同意" required>
+    <br>
+    <div
+  </form>
+</details>  
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
