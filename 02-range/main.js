@@ -4,5 +4,5 @@ $(function(){
   var $txtAge = $('#age');
   $range.change(function(){
     $txtAge.html($range.val());
-  })
+  });
 });

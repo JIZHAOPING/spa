@@ -13,5 +13,5 @@ $(function(){
   $eye.mouseout(function(){
     $pwdText.css('z-index','-10');
     $eye.text('鼠标悬停可视');
-  })
+  });
 });

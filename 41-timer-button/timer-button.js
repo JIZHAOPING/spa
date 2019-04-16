@@ -1,4 +1,4 @@
-$(function() {
+/*$(function() {
   var $container = $('div.box');
   
   $('<input type="button" value="同意">').appendTo($container);
@@ -23,3 +23,4 @@ $(function() {
     alert('就知道你会同意的！');                    
   });
 });
+*/

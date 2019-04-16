@@ -1,11 +1,10 @@
 $(function() {
-    var xData = [],
-        yData = [];
-
-for(var i = 0; i <= 1; i += 0.1) {
-  xData.push(roundFractional(i, 1));
-  yData.push(roundFractional(h(i), 2));            
-}
+  var xData = [],
+      yData = [];
+  for(var i = 0; i <= 1; i += 0.1) {
+    xData.push(roundFractional(i, 1));
+    yData.push(roundFractional(h(i), 2));            
+  }
 
   /* global echarts: true */
   var myChart = echarts.init($('.main').get(0));
@@ -31,7 +30,7 @@ for(var i = 0; i <= 1; i += 0.1) {
 
   myChart.setOption(option);
 
-    /**
+  /**
      *    * 小数点后面保留第 n 位
      *       *
      *          * @param x 做近似处理的数
@@ -48,9 +47,9 @@ for(var i = 0; i <= 1; i += 0.1) {
    *          * @param p 概率，取值范围 0 ~ 1
    *             * @returns -p*log(p) - (1-p)*log(1-p)
    *                */
-function h(p) {
-  return -1 * (plog(p) + plog(1 - p));        
-}
+  function h(p) {
+    return -1 * (plog(p) + plog(1 - p));        
+  }
 
   /**
    *    * 计算 p*log(p)
@@ -58,8 +57,8 @@ function h(p) {
    *          * @param p 概率，取值范围 0 ~ 1
    *             * @returns p*log(p)
    *                */
-function plog(p) {
-  return (p === 0)? 0 : p * Math.log2(p);        
-}
+  function plog(p) {
+    return (p === 0)? 0 : p * Math.log2(p);        
+  }
 
 });

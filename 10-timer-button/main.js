@@ -2,7 +2,7 @@ $(function(){
   //console.log('hello world!');
   var n = 6;
   var $btnAgree = $('input[type="button"]');
-  $btnAgree.attr("disabled","disabled");
+  $btnAgree.attr('disabled','disabled');
   var timer = window.setInterval(function(){
     n--;
     if(n===0){
