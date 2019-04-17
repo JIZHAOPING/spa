@@ -15,6 +15,6 @@ $(function(){
   },1000);
 
   $btnAgree.click(function(){
-    alert('SPA! 01-timer-button task!');
+    alert('恭喜你获得一亿元的大奖！');
   });
 });
