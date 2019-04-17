@@ -1,6 +1,7 @@
 /*global hljs:true*/
 $(function(){
   //console.log('hello world!');
+
   var $btnAddCode = $('input[type="button"]');
 
   $btnAddCode.click(function(){
@@ -9,6 +10,5 @@ $(function(){
     hljs.highlightBlock($code.find('pre').get(0));
     $('.main').append($code); 
   });
-  
   
 });
